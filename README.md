@@ -1,5 +1,5 @@
-# Todo App
-Dependencies: WebApp, React, Redux, Webpack, Rails, BCrypt, GraphQL
+# WebApp - Ruby on Rails, GraphQL, CRUD, BCrypt, PostgreSQL
+Dependencies: React, Redux, Webpack, Rails, BCrypt, GraphQL
 
 Create and save todo lists, including steps, to a database. Includes user authentication.
 
