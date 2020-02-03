@@ -1,0 +1,21 @@
+<h1>Log In</h1>
+
+<%= render 'shared/errors' %>
+
+<%= form_with model: @user, url: session_url, method: :post, local: true do |form| %>
+  <div>
+    <%= label :user, :username %>
+    <%= form.text_field :username, value: @user.username, required: true, placeholder: "Username" %>
+  </div>
+
+  <div>
+    <%= label :user, :password %>
+    <%= form.password_field :password, required: true, placeholder: "Password" %>
+  </div>
+
+  <div>
+    <%= form.submit "Sign In" %>
+  </div>
+<% end %>
+
+<p>Need to sign up: <%= link_to 'Register', new_user_url %></p>
